@@ -14,7 +14,7 @@ const getContracts = async (origen, estado, cupon) => {
             where += `AND cupon = '${cupon}' `;
         }
 
-        const [rows, fields] = await dbConnection.query(queries.getAllContracts + where);
+        const [rows, fields] = await dbConnection.query(queries.getAllContracts + where + `LIMIT 50`);
         result = rows;
     } catch (err) {
         console.log(err);
