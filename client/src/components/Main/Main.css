@@ -1,0 +1,35 @@
+.contTable{
+    padding: 24px;
+}
+
+.contracts-table {
+    width: 100%;
+    margin-top: 32px;
+    border-collapse: collapse;
+    font-family: Calibri, "Helvetica Neue", Arial, sans-serif;
+}
+
+.contracts-table thead th {
+border-bottom: 2px solid rgb(172, 172, 172); /* Línea más gruesa para el encabezado */
+padding: 16px;
+text-align: left;
+background-color: #ffffff; /* Fondo gris claro para el encabezado */
+}
+
+.contracts-table tbody tr:nth-child(even) {
+background-color: #ffffff; /* Fondo blanco */
+}
+
+.contracts-table tbody tr:nth-child(odd) {
+background-color: #f7f7f7; /* Fondo gris claro */
+}
+
+.contracts-table tbody td {
+border-bottom: 1px solid rgb(204, 203, 203); /* Línea negra finita entre las filas */
+padding: 16px;
+}
+
+.contracts-table tbody tr:last-child td {
+border-bottom: none; /* Elimina la línea inferior de la última fila */
+}
+  
