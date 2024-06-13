@@ -1,18 +1,14 @@
-const mysql = require('mysql');
+const mysql = require('mysql2');
+require('dotenv').config(); //Cargar variables de entorno de .env
 
-const connection = mysql.createConnection({
-  host: process.env.DB__HOST,
-  user: process.env.DB__USER,
-  password: process.env.DB__PASSWORD,
-  port: process.env.DB__PORT,
+const pool = mysql.createPool({
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  port: process.env.DB_PORT,
+  database: process.env.DB_NAME,
 });
 
-connection.connect((err) => {
-  if (err) {
-    console.error('Error de conexión a la BBDD:', err.stack);
-    return;
-  }
-  console.log('Conectado a la BBDD');
-});
+const promisePool = pool.promise();
 
-module.exports = connection;
+module.exports = promisePool;
