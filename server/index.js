@@ -6,7 +6,6 @@ const port = 3000;
 
 app.use(express.json()); // Para parsear el body de las peticiones
 
-// Rutas
 const contractsRouter = require('./routes/contracts.routes');
 
 // Middlewares
