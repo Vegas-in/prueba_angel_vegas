@@ -1,0 +1,9 @@
+.header{
+    height: 130px;
+    border-top: 5px solid rgba(245,6,161,255); 
+}
+
+.imgLogo{
+    width: 100px;
+    height: 100px;
+}
