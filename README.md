@@ -89,27 +89,7 @@ dotenv: Para gestionar variables de entorno.
 MySQL: Para la base de datos.
 mysql2: Para conectar a MySQL.
 
-contract-management-dashboard/
-├── client/
-│   ├── public/
-│   ├── src/
-│   │   ├── assets/
-│   │   ├── components/
-│   │   ├── App.jsx
-│   │   ├── Main.jsx
-│   │   ├── index.js
-│   │   ├── Main.css
-│   ├── vite.config.js
-│   ├── package.json
-│   ├── README.md
-├── server/
-│   ├── controllers/
-│   ├── models/
-│   ├── routes/
-│   ├── index.js
-│   ├── .env
-│   ├── package.json
-│   ├── README.md
+![esquema_app](https://github.com/Vegas-in/prueba_angel_vegas/assets/158770667/5590cde5-edf6-425d-835b-4d8eb7994351)
 
 
 client/: Contiene el código del frontend.
