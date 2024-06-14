@@ -5,15 +5,17 @@ const getContracts = async (origen, estado, cupon) => {
     let result;
     let where = "";
     try {
-
+        
         if (origen) {
             where += `AND origen = '${origen}' `;
-        } else if (estado) {
+        } 
+        if (estado) {
             where += `AND estado = '${estado}' `;
-        } else if (cupon) {
+        } 
+        if (cupon) {
             where += `AND cupon = '${cupon}' `;
         }
-
+        
         const [rows, fields] = await dbConnection.query(queries.getAllContracts + where + `LIMIT 50`);
         result = rows;
     } catch (err) {

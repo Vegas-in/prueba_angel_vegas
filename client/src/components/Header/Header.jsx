@@ -1,11 +1,11 @@
-import React from 'react';
-//import Logo from '../../assets/logo_Podo';
+import logo from '../../assets/logo_Podo.png';
 import './Header.css';
 
 const Header = () => {
+  console.log(logo);
   return (
     <header className="header">
-      {/* <img src={ Logo } alt="Logo Podo" className="imgLogo" /> */}
+      <img src={logo} alt="Logo Podo" className="imgLogo" />
     </header>
   );
 };
