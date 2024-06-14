@@ -8,9 +8,11 @@ const getContracts = async (origen, estado, cupon) => {
 
         if (origen) {
             where += `AND origen = '${origen}' `;
-        } else if (estado) {
+        } 
+        if (estado) {
             where += `AND estado = '${estado}' `;
-        } else if (cupon) {
+        } 
+        if (cupon) {
             where += `AND cupon = '${cupon}' `;
         }
 
