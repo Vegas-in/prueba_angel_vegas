@@ -89,44 +89,24 @@ dotenv: Para gestionar variables de entorno.
 MySQL: Para la base de datos.
 mysql2: Para conectar a MySQL.
 
-contract-management-dashboard/
-├── client/
-│   ├── public/
-│   ├── src/
-│   │   ├── assets/
-│   │   ├── components/
-│   │   ├── App.jsx
-│   │   ├── Main.jsx
-│   │   ├── index.js
-│   │   ├── Main.css
-│   ├── vite.config.js
-│   ├── package.json
-│   ├── README.md
-├── server/
-│   ├── controllers/
-│   ├── models/
-│   ├── routes/
-│   ├── index.js
-│   ├── .env
-│   ├── package.json
-│   ├── README.md
 
 
 client/: Contiene el código del frontend.
-public/: Contiene los archivos públicos y el archivo HTML.
-src/: Contiene el código fuente.
-assets/: Contiene activos estáticos como imágenes, iconos, etc.
-components/: Contiene los componentes de React.
-App.jsx: El componente principal de la aplicación.
-Main.jsx: El componente principal que maneja la obtención y renderización de contratos.
-index.js: El punto de entrada de la aplicación React.
-Main.css: El archivo CSS para el estilo de los componentes.
-vite.config.js: Archivo de configuración de Vite.
+ - public/: Contiene los archivos públicos y el archivo HTML.
+ - src/: Contiene el código fuente.
+  - assets/: Contiene activos estáticos como imágenes, iconos, etc.
+  - components/: Contiene los componentes de React.
+   - Main.jsx: El componente principal que maneja la obtención y renderización de contratos.
+   - Main.css: El archivo CSS para el estilo de los componentes.
+ - App.jsx: El componente principal de la aplicación.
+ - index.js: El punto de entrada de la aplicación React.
+ - vite.config.js: Archivo de configuración de Vite.
+  
 server/: Contiene el código del backend.
-controllers/: Contiene los controladores de la API.
-models/: Contiene los modelos de la base de datos.
-routes/: Contiene las rutas de la API.
-index.js: El punto de entrada del servidor Node.js.
+- controllers/: Contiene los controladores de la API.
+- models/: Contiene los modelos de la base de datos.
+- routes/: Contiene las rutas de la API.
+- index.js: El punto de entrada del servidor Node.js.
 .env: Archivo de variables de entorno.
 
 Mejoras Futuras:
