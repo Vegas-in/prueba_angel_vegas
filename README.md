@@ -89,6 +89,27 @@ dotenv: Para gestionar variables de entorno.
 MySQL: Para la base de datos.
 mysql2: Para conectar a MySQL.
 
+contract-management-dashboard/
+├── client/
+│   ├── public/
+│   ├── src/
+│   │   ├── assets/
+│   │   ├── components/
+│   │   ├── App.jsx
+│   │   ├── Main.jsx
+│   │   ├── index.js
+│   │   ├── Main.css
+│   ├── vite.config.js
+│   ├── package.json
+│   ├── README.md
+├── server/
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   ├── index.js
+│   ├── .env
+│   ├── package.json
+│   ├── README.md
 
 
 client/: Contiene el código del frontend.
