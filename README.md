@@ -89,7 +89,6 @@ dotenv: Para gestionar variables de entorno.
 MySQL: Para la base de datos.
 mysql2: Para conectar a MySQL.
 
-Estructura del Proyecto
 contract-management-dashboard/
 ├── client/
 │   ├── public/
@@ -111,6 +110,7 @@ contract-management-dashboard/
 │   ├── .env
 │   ├── package.json
 │   ├── README.md
+
 
 client/: Contiene el código del frontend.
 public/: Contiene los archivos públicos y el archivo HTML.
